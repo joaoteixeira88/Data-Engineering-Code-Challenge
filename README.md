@@ -81,7 +81,7 @@ You need to perform the following tasks using PySpark:
 
     
 ## Deliverables
-- Your solution should be uploaded and submitted using this repo.
+- Your solution should be uploaded and submitted using this repo as base (download, clone, for is not allowed)
 - Your solution should follow good project architecture.
 
 - **Output files**:
