@@ -5,7 +5,7 @@ Data Engineering Code Challenge (PySpark)
 The purpose of this challenge is to evaluate your skills in data engineering, particularly in working with PySpark for data processing and transformation tasks. This challenge mimics real-world scenarios you might encounter in the role.
 
 ### Technical information:
-- Use **Python** and **PySpark** 
+- Use **Python** and **PySpark** [https://spark.apache.org/docs/latest/api/python/getting_started/install.html]
 - Use the following package for PySpark tests - https://github.com/MrPowers/chispa - the application **needs** to have tests.
 - **Do not use** notebooks for final delivery, like **Jupyter** for instance. While these are good for interactive work and/or prototyping in this case they shouldn't be used.
 - The application should have an automated build pipeline using GitHub Actions.
