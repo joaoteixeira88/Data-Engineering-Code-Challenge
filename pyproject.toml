@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "code-challenge"
+version = "1.0.0"
+description = "Project for DEUS code challenge"
+authors = ["Joao Teixeira <joaopteixeira58@gmail.com>"]
+readme = "README.md"
+keywords=['python', 'guard', 'parameters', 'exceptions']
+classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.9',
+    ]
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyspark = {extras = ["sql"], version = "^3.5.0"}
+chispa = "*"
+pytest = "*"
