@@ -1,23 +1,36 @@
-from pyspark.sql.types import StructType, StructField, IntegerType, DoubleType, TimestampType, StringType
+from pyspark.sql.types import (
+    DoubleType,
+    IntegerType,
+    StringType,
+    StructField,
+    StructType,
+)
 
-transaction_schema = StructType([
-    StructField("transaction_id", StringType(), False),
-    StructField("store_id", StringType(), False),
-    StructField("product_id", StringType(), False),
-    StructField("quantity", IntegerType(), False),
-    StructField("transaction_date", StringType(), False),
-    StructField("price", DoubleType(), False)
+from src.crosscutting.constants import FieldConstants
 
-])
+transaction_schema = StructType(
+    [
+        StructField(FieldConstants.TRANSACTION_ID, StringType(), False),
+        StructField(FieldConstants.STORE_ID, StringType(), False),
+        StructField(FieldConstants.PRODUCT_ID, StringType(), False),
+        StructField(FieldConstants.QUANTITY, IntegerType(), False),
+        StructField(FieldConstants.TRANSACTION_DATE, StringType(), False),
+        StructField(FieldConstants.PRICE, DoubleType(), False),
+    ]
+)
 
-product_schema = StructType([
-    StructField("product_id", StringType(), False),
-    StructField("product_name", StringType(), False),
-    StructField("category", StringType(), False)
-])
+product_schema = StructType(
+    [
+        StructField(FieldConstants.PRODUCT_ID, StringType(), False),
+        StructField(FieldConstants.PRODUCT_NAME, StringType(), False),
+        StructField(FieldConstants.CATEGORY, StringType(), False),
+    ]
+)
 
-store_schema = StructType([
-    StructField("store_id", StringType(), False),
-    StructField("store_name", StringType(), False),
-    StructField("location", StringType(), False)
-])
+store_schema = StructType(
+    [
+        StructField(FieldConstants.STORE_ID, StringType(), False),
+        StructField(FieldConstants.STORE_NAME, StringType(), False),
+        StructField(FieldConstants.LOCATION, StringType(), False),
+    ]
+)

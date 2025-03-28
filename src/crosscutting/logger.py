@@ -1,5 +1,6 @@
 import logging
 
+
 def get_logger(name: str) -> logging.Logger:
     """
     Create and configure a logger with the given name.
@@ -15,7 +16,10 @@ def get_logger(name: str) -> logging.Logger:
     Returns:
         logging.Logger: A configured logger instance with the specified name.
     """
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+    logging.basicConfig(
+        level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+    )
     return logging.getLogger(name)
+
 
 logger = get_logger(__name__)
